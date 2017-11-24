@@ -5,9 +5,9 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <style>
 /*重置*/
-	body,a,h1,p,h2{margin:0;}
+	body,a,h1,p,h2{margin:0; background-color: #f8f8f8;}
 	*{font-size:14px; font-family:"微软雅黑";}
-	a{text-decoration:none;}
+	a{text-decoration:none;list-style: none;}
 	.oveflow_h{overflow:hidden;}
 	img{display:block;}
 	input{margin:0; padding:0; border:none; outline:none;}
@@ -18,15 +18,15 @@
 	.navbox{float:right;}
 	.nav{float: left;}
 	.me{float: right;}
-	.nav a{ float: left; color: #666; font-size: 14px;width: 120px;height: 70px; line-height: 70px;text-align: center; -webkit-transition-duration: 0.4s;transition-duration: 0.4s;}
+	.nav a{ float: left; color: #666; font-size: 14px;width: 120px;height: 70px; line-height: 70px;text-align: center; -webkit-transition-duration: 0.4s;transition-duration: 0.4s;background-color: #fff;}
 	.nav a:hover:not(.active){color:#666666; background-color: #ddd;}
 	.me img{padding-left: 30px; margin-top: 16px;}
-	.active {background-color:#23a2f5; color: #fff!important; }
+	.active {background-color:#23a2f5!important; color: #fff!important; }
 /*banner*/
-	.bannerbox{ width: 100%; height: 200px; background-position: center;  background-repeat: no-repeat; background-image: url(
+	.bannerbox{ width: 1200px; height: 200px;  margin-left: auto;margin-right: auto; background-color: #f4f4f4; background-position: center;  background-repeat: no-repeat; background-image: url(
 	images/bg.jpg);}
 /*常用导航*/
-	.rongqi{height: 190px;}
+	.rongqi{height: 190px;background-color: #f8f8f8;}
 	.usenav{width: 1200px;margin-left: auto;margin-right: auto;}
 	.zhanku{width: 224px;height: 130px; float: left; background-color: #ffd100; border-radius: 5px;margin-top: 30px; background-repeat: no-repeat; background-position: center; margin-bottom: 30px;}
 	.huaban{width: 224px;height: 130px; float: left; background-color: #f74c4d; border-radius: 5px;margin-top: 30px; background-repeat: no-repeat; background-position: center; margin-left: 20px;}
@@ -37,14 +37,22 @@
     transition-duration: 0.4s;}
 /*导航*/
 	.totalnavbox{width: 100%; height: 370px; background-color:#f7f8fa;}
-	.title{width: 1200px;margin-left: auto; margin-right: auto; font-size: 24px; line-height: 30px;; padding-top: 30px;}
+	.totalnavbox2{width: 100%; height: 270px; background-color:#f7f8fa;}
+	.title{width: 1200px;margin-left: auto; margin-right: auto; font-size: 24px; line-height: 30px;}
 	.totalnav{width: 1200px; margin-left: auto; margin-right: auto;}
-	.con1{width: 180px; height: 80px; border-radius: 5px;background-color:#fff; border: 1px solid #d8d9da; float: left; background-repeat: no-repeat;background-position: center; margin-top: 20px}
-	.con{width: 180px; height: 80px; border-radius: 5px;background-color:#fff; border: 1px solid #d8d9da; float: left; background-repeat: no-repeat;background-position: center; margin-left: 21px; margin-top: 20px;}
+	.con1{width: 180px; height: 80px; border-radius: 5px;background-color:#fff;  float: left; background-repeat: no-repeat;background-position: center; margin-top: 20px}
+	.con{width: 180px; height: 80px; border-radius: 5px;background-color:#fff;float: left; background-repeat: no-repeat;background-position: center; margin-left: 24px; margin-top: 20px;}
 	.totalnav .con:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 14px 30px 0 rgba(0,0,0,0.05);-webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;}
 	.totalnav .con1:hover{box-shadow: 0 12px 16px 0 rgba(0,0,0,0.1), 0 14px 30px 0 rgba(0,0,0,0.05);-webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;}
+/**/
+	.partbox{width: 1200px;margin-left: auto;margin-right: auto;}
+	.part{width: 384px; height: 214px; float: left; background-color: #fff;border-radius: 5px;}
+	.pleft{font-size: 16px;color: #333; background-color: #fff; line-height:50px; border-radius: 5px;}
+	.lin{width: 384px; height: 1px; background-color: #eee;}
+	.left{ float: left; margin-right: 30px;}
+	.left a{color: #808080; line-height: 26px;}
 </style>
 <title>index</title>
 </head>
@@ -67,8 +75,8 @@
 		</div>
 	</div>
 </div>
-<!--banner-->
-<div class="bannerbox"></div>
+<!--banner--
+	<div class="bannerbox"></div>
 <!--常用导航_5-->
 <div class="rongqi">
 	<div class="usenav">
@@ -91,31 +99,64 @@
 		<a href="http://www.uisdc.com/" target="_blank"><div class="con" style="background-image: url( images/youshe.png)"></div></a>
 		<!--第二行-->
 		<a href="https://land-book.com/" target="_blank"><div class="con1" style="background-image: url( images/land_book.png)"></div></a>
-		<a href="" target="_blank"><div class="con" style="background-image: url( images/4db.png)"></div></a>
-		<a href="" target="_blank"><div class="con" style="background-image: url( images/collectui.png)"></div></a>
-		<a href="" target="_blank"><div class="con" style="background-image: url( images/ui8.png)"></div></a>
-		<a href="" target="_blank"><div class="con" style="background-image: url( images/youdaofanyi.png)"></div></a>
-		<a href="" target="_blank"><div class="con" style="background-image: url( images/googlefanyi.png)"></div></a>
+		<a href="http://4db.cc/" target="_blank"><div class="con" style="background-image: url( images/4db.png)"></div></a>
+		<a href="https://www.collectui.com/" target="_blank"><div class="con" style="background-image: url( images/collectui.png)"></div></a>
+		<a href="https://ui8.net/" target="_blank"><div class="con" style="background-image: url( images/ui8.png)"></div></a>
+		<a href="http://fanyi.youdao.com/" target="_blank"><div class="con" style="background-image: url( images/youdaofanyi.png)"></div></a>
+		<a href="https://translate.google.cn/" target="_blank"><div class="con" style="background-image: url( images/googlefanyi.png)"></div></a>
 		<!--第三行-->		
-		<a href="http://588ku.com/" target="_blank"><div class="con1" style="background-image: url( images/uiii2.png)"></div></a>
-		<a href="http://www.58pic.com/" target="_blank"><div class="con" style="background-image: url( images/uuedna.png)"></div></a>
-		<a href="http://www.iconfont.cn/plus" target="_blank"><div class="con" style="background-image: url( images/uuemo.png)"></div></a>
-		<a href="https://www.iconfinder.com/" target="_blank"><div class="con" style="background-image: url( images/68design.png)"></div></a>
-		<a href="https://www.behance.net" target="_blank"><div class="con" style="background-image: url( images/90sheji.png)"></div></a>
-		<a href="http://www.uisdc.com/" target="_blank"><div class="con" style="background-image: url( images/cainianjiaocheng.png)"></div></a>
+		<a href="https://uiiiuiii.com/" target="_blank"><div class="con1" style="background-image: url( images/uiii2.png)"></div></a>
+		<a href="http://www.uedna.com/" target="_blank"><div class="con" style="background-image: url( images/uuedna.png)"></div></a>
+		<a href="http://www.uemo.net/list/id/17190/" target="_blank"><div class="con" style="background-image: url( images/uuemo.png)"></div></a>
+		<a href="http://www.68design.net/" target="_blank"><div class="con" style="background-image: url( images/68design.png)"></div></a>
+		<a href="http://90sheji.com/" target="_blank"><div class="con" style="background-image: url( images/90sheji.png)"></div></a>
+		<a href="http://www.runoob.com/" target="_blank"><div class="con" style="background-image: url( images/cainianjiaocheng.png)"></div></a>
 	</div>
 </div>
-<div class="totalnavbox">
-	<div class="title">设计导航</div>
+<div class="totalnavbox2">
+	<div class="title">常用网站</div>
 	<div class="totalnav">
-		<a href="http://588ku.com/" target="_blank"><div class="con1" style="background-image: url( images/qiankuwang.png)"></div></a>
-		<a href="http://www.58pic.com/" target="_blank"><div class="con" style="background-image: url( images/qiantuwang.png)"></div></a>
-		<a href="http://www.iconfont.cn/plus" target="_blank"><div class="con" style="background-image: url( images/iconfont.png)"></div></a>
-		<a href="https://www.iconfinder.com/" target="_blank"><div class="con" style="background-image: url( images/iconfinder.png)"></div></a>
-		<a href="https://www.behance.net" target="_blank"><div class="con" style="background-image: url( images/behance.png)"></div></a>
-		<a href="http://www.uisdc.com/" target="_blank"><div class="con" style="background-image: url( images/youshe.png)"></div></a>
+		<a href="https://www.bilibili.com/" target="_blank"><div class="con1" style="background-image: url( images/bilibili.png)"></div></a>
+		<a href="http://www.youku.com/" target="_blank"><div class="con" style="background-image: url( images/youku.png)"></div></a>
+		<a href="https://v.qq.com/" target="_blank"><div class="con" style="background-image: url( images/tengxunshipin.png)"></div></a>
+		<a href="https://pan.baidu.com/" target="_blank"><div class="con" style="background-image: url( images/baiduwangpan.png)"></div></a>
+		<a href="https://tieba.baidu.com/index.html" target="_blank"><div class="con" style="background-image: url( images/baidutieba.png)"></div></a>
+		<a href="https://www.zhihu.com/" target="_blank"><div class="con" style="background-image: url( images/zhihu.png)"></div></a>
+		
+		<!--第二行-->
+		<a href="https://taobao.com/" target="_blank"><div class="con1" style="background-image: url( images/taobaowang.png)"></div></a>
+		<a href="https://www.jd.com/" target="_blank"><div class="con" style="background-image: url( images/dongxi.png)"></div></a>
+		<a href="http://www.dangdang.com/" target="_blank"><div class="con" style="background-image: url( images/dangdang.png)"></div></a>
+
 	</div>
 </div>
-	
+
+<div class="partbox">
+	<div class="part">
+				<p class="pleft">&nbsp;&nbsp;&nbsp;app/图标 参考-常用</p>
+				<p class="lin"></p>
+				<ul class="left">
+					<a href="https://www.taobao.com/"><li>淘宝</li></a>
+					<a href="https://www.tmall.com/"><li>天猫</li></a>
+					<a href="https://ju.taobao.com/"><li>聚划算</li></a>
+					<a href="https://www.suning.com/"><li>苏宁</li></a>
+					<a href="https://www.jd.com/"><li>京东</li></a>
+				</ul>
+				<ul class="left">
+					<a href="https://www.vip.com/"><li>唯品会</li></a>
+					<a href="http://bj.jumei.com/"><li>聚美</li></a>
+					<a href="http://www.mogujie.com/"><li>蘑菇街</li></a>
+					<a href="http://www.dangdang.com/"><li>当当</li></a>
+					<a href="http://www.niuza.com/"><li>牛杂网</li></a>
+				</ul>
+				<ul class="left">
+					<a href="http://www.mizhe.com/"><li>米折</li></a>
+					<a href="http://www.feiniu.com/"><li>飞牛</li></a>
+					<a href="http://www.yhd.com/"><li>1号店</li></a>
+					<a href="http://www.kuaidi100.com/"><li>快递100</li></a>
+					<a href="https://yz.cainiao.com/"><li>菜鸟</li></a>
+				</ul>
+	</div>
+</div>
 </body>
 </html>
